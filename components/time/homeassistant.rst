@@ -5,13 +5,15 @@ The preferred way to get time in ESPHome is using Home Assistant.
 With the ``homeassistant`` time platform, the :doc:`native API </components/api>` connection
 to Home Assistant will be used to periodically synchronize the current time.
 
+If the time is incorrect, you'll need to set your own Time Zone.
+
 .. code-block:: yaml
 
     # Example configuration entry
     time:
       - platform: homeassistant
         id: homeassistant_time
-
+        timezone: Europe/London
 Configuration variables
 -----------------------
 
